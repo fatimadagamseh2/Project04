@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+
+            <button id="languageButton">العربية</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1 data-i18n="welcome">Welcome to My Portfolio</h1>
+            <p data-i18n="aboutText">
+                I am a Cybersecurity graduate interested in technology.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 data-i18n="skillsTitle">My Skills</h2>
+            <ul>
+                <li data-i18n="skill1">Cybersecurity</li>
+                <li data-i18n="skill2">Networking</li>
+                <li data-i18n="skill3">JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 data-i18n="projectsTitle">My Projects</h2>
+            <p data-i18n="projectsText">
+                These are my web development projects.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contactTitle">Contact Me</h2>
+
+            <form>
+                <label for="name" data-i18n="nameLabel">Name</label>
+                <input type="text" id="name">
+
+                <label for="email" data-i18n="emailLabel">Email</label>
+                <input type="email" id="email">
+
+                <button type="button" data-i18n="sendButton">
+                    Send
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footerText">My Portfolio © 2026</p>
+    </footer>
+
+</body>
+</html>
